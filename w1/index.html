@@ -27,24 +27,36 @@
 				/* alert("I'm annoying!"); */
 
 				var username = prompt("Hi, what's your name?");
-				var car = new Array("BMW", "Saab", "Maseratis");
-				console.log(car);
-				
-				if(username==="Chris") {
-					document.write("<h1>Hello, " + username + "!<br> You won a " + car[0] +"!</h1>");
-				} 
-				else {
-					document.write("<h1>Hello, " + username + ".</h1>");
-				}
+				var car = new Array("BMW", "Saab", "Maserati");
+				var randomCar = Math.floor(Math.random()*car.length);
+				var photo = "<img src=" + randomCar + ".jpg>";
 
+				document.write("<h1>Hello, " + username + ".</h1>");	
 
 			</script>
 
 
 	</head>
  	
-	<body>
+	<Body>
 		<img src="oprah.jpg" alt="Oprah" img width="800">
-	</body>
+
+			<script>
+
+				if(username==="Chris") {
+					document.write("<h1>You won a " + car[randomCar] +"!</h1>");
+					document.write(photo);
+				}
+
+
+				else if(username==="Sang") {
+					document.write("<h1>You won a " + car[randomCar] +"!</h1>");
+					document.write(photo);
+				}
+
+			</script>
+
+
+	</Body>
 
 </html>

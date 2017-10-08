@@ -28,18 +28,27 @@
 				'Mattan',
 				'Chris',
 				'Lee',
-				'Casey',
-				'that girl you forgot to text back',
-				'Kayne West'
+			
 			];
 
-			var randomNumber = Math.floor(Math.random()*bars.length);
-			
-			var barname = bars[randomNumber];
-			var friendname = friends[randomNumber];
+			var randomBar = Math.floor(Math.random()*bars.length);
+			var randomFriend = Math.floor(Math.random()*friends.length);
+
+			var barname = bars[randomBar];
+			var friendname = friends[randomFriend];
 
 			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
-		
+
+		/* Week 1 - Lesson 12: 7 Challenges */
+		/* (1) The page now displays "array number" of the bar shown on the page. */
+		/* (2) Arrays always start from 0.
+		/* (3) Bar is set to 3 = One Month and only the "friends" variable changes when refreshed.*/
+		/* (4) Ah, it shows the number of elements in the arrays. */
+		/* (5) The barname and friendname are undefined. Math.floor rounds up a number to its nearest integer.*/
+		/* (6) The math object provides you properties and methods for mathematical constants and functions. */
+		/* (7) Done. */
+		/* Bonus: Done */
+
 		</script>
 	</head>
 	<body>

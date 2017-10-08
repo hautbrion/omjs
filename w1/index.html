@@ -26,9 +26,13 @@
 				/* this is an event */
 				/* alert("I'm annoying!"); */
 
-				var username = prompt("What's your name?");
+				var username = prompt("Hi, what's your name?");
 				
-				document.write("<h1>Hello, " + username + "!</h1>");
+				if(username==="Chris") {
+					document.write("<h1>Hello, " + username + "!<br> You won a car!</h1>");
+				} else {
+					document.write("<h1>Hello, " + username + ".</h1>");
+				}
 
 
 			</script>

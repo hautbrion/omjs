@@ -7,7 +7,7 @@
 			
 				/* Basic CSS comment */	
 				body {
-					background: #3EB890;
+					background: #322A60;
 					color: white;
 					width: 960px;
 					margin: 0 auto;
@@ -27,10 +27,13 @@
 				/* alert("I'm annoying!"); */
 
 				var username = prompt("Hi, what's your name?");
+				var car = new Array("BMW", "Saab", "Maseratis");
+				console.log(car);
 				
 				if(username==="Chris") {
-					document.write("<h1>Hello, " + username + "!<br> You won a car!</h1>");
-				} else {
+					document.write("<h1>Hello, " + username + "!<br> You won a " + car[0] +"!</h1>");
+				} 
+				else {
 					document.write("<h1>Hello, " + username + ".</h1>");
 				}
 
@@ -41,7 +44,7 @@
 	</head>
  	
 	<body>
-		
+		<img src="oprah.jpg" alt="Oprah" img width="800">
 	</body>
 
 </html>

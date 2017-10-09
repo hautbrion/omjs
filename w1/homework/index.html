@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>We all make mistakes.</title>
+
+			<style>
+			
+				/* Basic CSS comment */	
+				body {
+					background: #3EB890;
+					color: white;
+					width: 960px;
+					margin: 0 auto;
+					font-size: 30px;
+					font-family: lato;
+					color: white;
+				}
+
+				h1 {
+					font-size: 20px;
+					font-family: Helvetica, Arial, sans-serif;
+					color: #FFF	;
+				}
+
+			</style>
+
+			<script>
+
+				var number = Math.floor(Math.random()*10);
+
+				var alcohol = new Array ("vodka", "whiskey", "tequila");
+				var randomAlcohol = Math.floor(Math.random()*alcohol.length);
+				var drink = alcohol[randomAlcohol]
+
+				var sober = new Array ("walked home.", "played Overwatch.", "read poetry.")
+				var randomSober = Math.floor(Math.random()*alcohol.length);
+				var soberAction = sober[randomSober];
+
+				var tipsy = new Array ("thought about texing my ex.", "played with my cat for two hours.", "started to watch Narcos on Netflix.")
+				var randomTipsy = Math.floor(Math.random()*alcohol.length);
+				var tipsyAction = tipsy[randomTipsy];
+
+				var drunk = new Array ("liked my ex's instagram post from 58 weeks ago.", "called the police to snitch on my neighbor who's been growing weed.", "ordered a sex doll from Amazon and sent it to my brother.")
+				var randomDrunk = Math.floor(Math.random()*alcohol.length);
+				var drunkAction = drunk[randomDrunk];
+
+			</script>
+
+
+	</head>
+ 	
+	<Body>
+
+			<script>
+					if(number<4) {
+					document.write("I had <strong>" + number + "</strong> shots of <strong>" + drink + "</strong> and <br>" + soberAction);
+				   }
+
+				  else if(3<number && number<7) {
+				  	document.write("I had <strong>" + number + "</strong> shots of <strong>" + drink + "</strong> and <br>" + tipsyAction);
+				   }
+
+				   else {
+				  	document.write("I had <strong>" + number + "</strong> shots of <strong>" + drink + "</strong> and <br>" + drunkAction);
+				   }
+
+			</script>
+
+
+	</Body>
+
+</html>

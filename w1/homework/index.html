@@ -52,7 +52,12 @@
 	<Body>
 
 			<script>
-					if(number<4) {
+
+					if(number<2) {
+					document.write("I had <strong>" + number + "</strong> shot of <strong>" + drink + "</strong> and <br>" + soberAction);
+				   }
+
+					else if(number>1 && number<4) {
 					document.write("I had <strong>" + number + "</strong> shots of <strong>" + drink + "</strong> and <br>" + soberAction);
 				   }
 
@@ -60,7 +65,7 @@
 				  	document.write("I had <strong>" + number + "</strong> shots of <strong>" + drink + "</strong> and <br>" + tipsyAction);
 				   }
 
-				   else {
+				  else {
 				  	document.write("I had <strong>" + number + "</strong> shots of <strong>" + drink + "</strong> and <br>" + drunkAction);
 				   }
 
